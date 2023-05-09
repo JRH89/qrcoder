@@ -1,14 +1,17 @@
 "use client"
-import ClientHome, {clientHome} from './HomePage'
+import ClientHome from './HomePage'
 import React from 'react'
-
+import Header from './Header'
+import Footer from './Footer'
 
 export default function Page() {
   return (
-    <main className="mx-auto flex my-auto flex-col items-center justify-between">
-      <div className='my-auto mx-auto flex-col text-center justify-center place-items-center align-center'>
-        <ClientHome />
-      </div>
+    <div className='flex flex-col min-h-screen'>
+    <Header />
+    <main  className='flex my-auto mx-auto' > 
+      <ClientHome /> 
     </main>
+    <Footer />
+    </div>
   )
 }
