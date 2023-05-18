@@ -17,9 +17,9 @@ export default function RootLayout({ children }) {
         <meta property="og:title" content="QR Coder" />
         <meta property="og:description" content="QR Coder Creator" />
         <meta property="og:image" content="" />
-        <meta property="url" content="https://nextjs-store-chi.vercel.app/" />
+        <meta property="url" content="https://qrcoder-lac.vercel.app/" />
         <meta property="title" content="QR Coder" />
-        <meta property="description" content="E-commerce app made with NextJS 13, TailwindCSS, Stripe, and Zustand" />
+        <meta property="description" content="QR code creator" />
         <meta property="image" content="" />
         <link type="image/jpg" rel="shortcut icon" href="favicon.ico" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossOrigin="anonymous" referrerPolicy="no-referrer" />

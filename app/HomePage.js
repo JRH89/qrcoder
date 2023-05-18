@@ -31,23 +31,25 @@ function Home() {
 
   return (
     <>
-      <div className='flex flex-col justify-center align-middle'>
+      <div className='flex flex-col place-items-center justify-center align-middle'>
         <form onSubmit={handleSubmit} className='flex flex-col text-center justify-center'>
-          <label className='justify-center align-middle items-centertext-xl mb-2'>
-              ENTER:
+          <label className='underline justify-center align-middle items-centertext-xl mb-2'>
+              CHOOSE:
           </label>
-            <div className="justify-center pl-2 flex flex-row align-middle place-items-center mb-4">
+            <div className="justify-evenly pl-2 mb-2 flex flex-row align-middle place-items-center">
             <label className="flex justify-center text-center items-center align-middle mr-4">
-            <input className='justify-center text-center items-center' type="radio" name="inputType" value="url" checked={inputType === 'url'} onChange={() => setInputType('url')} />
+            <input className='justify-center text-center items-center' type="checkbox" name="inputType" value="url" checked={inputType === 'url'} onChange={() => setInputType('url')} />
               URL
             </label>
+
+            <h1>or...</h1>
             <label className="justify-center flex align-middle text-center items-center mr-4">
-              <input type="radio" name="inputType" value="text" checked={inputType === 'text'} onChange={() => setInputType('text')} />
+              <input type="checkbox" name="inputType" value="text" checked={inputType === 'text'} onChange={() => setInputType('text')} />
               Text
             </label> 
             </div>
-          <input autoComplete='url' className='rounded-md max-w-[60ch] flex flex-col justify-center align-center items-center text-black text-center' type='any' value={inputValue} onChange={(event) => setInputValue(event.target.value)} />
-          <button className='mb-4 border border-solid border-white rounded-md mt-4' type='submit'>CREATE</button>
+          <input autoComplete='url' className='rounded-md max-w-[60ch] flex flex-col shadow-md shadow-white/60 justify-center align-center items-center text-white bg-black border-2 border-solid border-white text-center' type='any' value={inputValue} onChange={(event) => setInputValue(event.target.value)} />
+          <button className='shadow-md font-bold shadow-white/60 mb-4 border-2 border-solid border-white rounded-md mt-4' type='submit'>CREATE</button>
         </form>
         
           {qrCodeUrl && (
