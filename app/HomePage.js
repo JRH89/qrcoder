@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <>
-      <div className='flex flex-col justify-center align-middle'>
+      <div className='mx-auto my-auto place-items-center flex flex-col justify-center align-middle'>
         <form onSubmit={handleSubmit} className='flex flex-col text-center justify-center'>
           <label className='justify-center align-middle items-center text-xl mb-2'>
               ENTER:
