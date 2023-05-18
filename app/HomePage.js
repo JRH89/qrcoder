@@ -31,7 +31,7 @@ function Home() {
 
   return (
     <>
-      <div className=' place-items-center flex flex-col place-items-center justify-center align-middle'>
+      <div className='my-auto place-items-center flex flex-col  justify-center align-middle'>
         <form onSubmit={handleSubmit} className='flex flex-col text-center justify-center'>
           <label className='underline justify-center align-middle items-centertext-xl mb-2'>
               CHOOSE:
